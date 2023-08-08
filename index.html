@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>AF-AI-PROJECT</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <h1>Voice Assistant:</h1>
+    <h2>by: Ahmad Fesal.</h2>
+    <center>
+      <button id="welcome" onclick="speak();">welcome</button>
+    </center>
+    <div class="container">
+      <form
+        onsubmit="event.preventDefault();
+     conversationUserAdd(document.getElementById('input-text').value);
+     openai_test();"
+      >
+        <input type="text" id="input-text" />
+        <button id="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <div id="chat-container"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
